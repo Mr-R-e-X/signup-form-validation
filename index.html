@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-slate-700 h-screen">
+    <form
+      action="#"
+      class="px-4 py-5 mx-auto my-auto w-6/12 h-6/12"
+      id="signup-form"
+    >
+      <div id="email-div" class="w-full">
+        <div class="text-white text-xl my-2">
+          <label for="email">Email</label>
+        </div>
+        <div class="w-full">
+          <input
+            type="text"
+            id="email"
+            placeholder="Example@email.com"
+            class="w-full px-4 py-2 my-1 rounded-md"
+          />
+        </div>
+      </div>
+      <div id="pass-div" class="w-full">
+        <div class="text-white text-xl my-2">
+          <label for="password">Password</label>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Your Password"
+            class="w-full px-4 py-2 my-1 rounded-md"
+          />
+        </div>
+      </div>
+      <div id="sub-div" class="w-fit mx-auto my-4 bg-gray-500 rounded-md">
+        <input type="submit" value="Submit" class="px-6 py-2 text-white" />
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

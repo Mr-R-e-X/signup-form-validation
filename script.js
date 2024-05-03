@@ -29,7 +29,8 @@ let flag = { emailflag: false, passflag: false };
 
 email.addEventListener("keyup", (e) => {
   let value = e.target.value;
-  if (regex.test(value) && value.length > 3) {
+  let emailChar = value.split("@");
+  if (emailChar[0].length > 3 && regex.test(value)) {
     p1.style.display = "none";
     flag.emailflag = true;
     allGood(flag);

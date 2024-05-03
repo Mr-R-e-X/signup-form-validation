@@ -29,7 +29,7 @@ let flag = { emailflag: false, passflag: false };
 
 email.addEventListener("keyup", (e) => {
   let value = e.target.value;
-  if (regex.test(value)) {
+  if (regex.test(value) && value.length > 3) {
     p1.style.display = "none";
     flag.emailflag = true;
     allGood(flag);
